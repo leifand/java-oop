@@ -18,7 +18,7 @@ public class Human {
 	public String showName() {
 		return name + " the Human";
 	}
-	public void showHealth() { System.out.println("Health: " + health); }
+	public void showHealth() { System.out.println(name + " Health: " + health); }
 	public void attack(Human target) {
 		target.health -= strength;
 		System.out.println(showName() + " attacks " + target.showName() + " for " + strength + " damage!");
